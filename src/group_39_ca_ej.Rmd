@@ -5,7 +5,7 @@ date: "11/14/2021"
 output: html_document
 ---
 
-```{r setup, include= TRUE}
+```{r setup, include= TRUE, warning = FALSE, message = FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
 library(tidyverse)
@@ -18,7 +18,7 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
   clean_names()
 ```
 
-```{r, fig.cap = "The figure compares the CalEnviroScreen 3.0 score with the percentage of the census tract that is reported as white. The darker purple indicates a higher density of points on the figure.}
+```{r, fig.cap = "The figure compares the CalEnviroScreen 3.0 score with the percentage of the census tract that is reported as white. The darker purple indicates a higher density of points on the figure."}
 ggplot(data=ces, aes(x=white_percent, y=ces_3_0_score))+
   geom_hex() +
   labs(x = "Percent White Population of Census Tract",
