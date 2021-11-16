@@ -21,13 +21,13 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 ```{r, fig.cap = "The figure compares the CalEnviroScreen 3.0 score with the percentage of the census tract that is reported as white. The darker purple indicates a higher density of points on the figure.}
 ggplot(data=ces, aes(x=white_percent, y=ces_3_0_score))+
   geom_hex() +
-  labs(x = "Percent White Population",
+  labs(x = "Percent White Population of Census Tract",
        y = "CalEnviroScreen 3.0 Score",
        title = "CalEnviroScreen 3.0 Score by White Population Demographic")+ 
        scale_fill_gradient(low= "darkorchid1", high="darkorchid4")+
   theme_minimal()
 ```
-The graph indicates that on an average, higher percentage of white population (approx 75%) is least affected by pollution as indicated by the CalEnviroScreen 3.0 Score of below 25. This therefore also indicates that there exists a a negative correlation between percentage of white population and potential exposure to pollution. 
+The graph indicates that on average, a higher percentage of white population (approx 75%) is less affected by pollution as indicated by the CalEnviroScreen 3.0 Score of less than 25. This also suggests that there exists a negative correlation between percentage of white population and potential exposure to pollution. 
 
 
 
