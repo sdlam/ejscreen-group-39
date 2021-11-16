@@ -23,7 +23,9 @@ ggplot(data=ces, aes(x=white_percent, y=ces_3_0_score))+
   geom_hex() +
   labs(x = "Percent White Population",
        y = "CalEnviroScreen 3.0 Score",
-       title = "CalEnviroScreen 3.0 Score by White Population Demographic")
+       title = "CalEnviroScreen 3.0 Score by White Population Demographic")+ 
+       scale_fill_gradient(low= "forestgreen", high="firebrick")+
+  theme_minimal()
 ```
 
 
