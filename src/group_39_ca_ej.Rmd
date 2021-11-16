@@ -29,6 +29,8 @@ ggplot(data=ces, aes(x=white_percent, y=ces_3_0_score))+
 ```
 The graph indicates that on average, a higher percentage of white population (approx 75%) is less affected by pollution as indicated by the CalEnviroScreen 3.0 Score of less than 25. This also suggests that there exists a negative correlation between percentage of white population and potential exposure to pollution. 
 
+Citations:
 
+Office of Environmental Health and Hazard Assessment, CalEnviroScreen 3.0 Demographics (Jun. 2018), https://oehha.ca.gov/calenviroscreen/report/calenviroscreen-30
 
 
